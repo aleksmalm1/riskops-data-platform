@@ -1,3 +1,6 @@
+USE riskops;
+GO
+
 IF OBJECT_ID('marts.risk_daily_report','V') IS NOT NULL DROP VIEW marts.risk_daily_report;
 EXEC('CREATE VIEW marts.risk_daily_report AS
   SELECT

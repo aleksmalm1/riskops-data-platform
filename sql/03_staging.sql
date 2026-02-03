@@ -1,3 +1,5 @@
+USE riskops;
+GO
 
 IF OBJECT_ID('staging.customers_clean','U') IS NOT NULL DROP TABLE staging.customers_clean;
 SELECT

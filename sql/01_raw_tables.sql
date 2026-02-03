@@ -1,3 +1,6 @@
+USE riskops;
+GO
+
 IF OBJECT_ID('raw.customers_raw','U') IS NOT NULL DROP TABLE raw.customers_raw;
 CREATE TABLE raw.customers_raw (
   customer_id nvarchar(50) NULL,

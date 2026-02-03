@@ -1,3 +1,6 @@
+USE riskops;
+GO
+
 IF OBJECT_ID('core.fact_transactions','U') IS NOT NULL DROP TABLE core.fact_transactions;
 IF OBJECT_ID('core.fact_repayments','U')   IS NOT NULL DROP TABLE core.fact_repayments;
 

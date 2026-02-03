@@ -1,3 +1,6 @@
+USE riskops;
+GO
+
 SELECT TOP 10 * FROM marts.risk_daily_report ORDER BY report_date DESC, segment;
 
 SELECT TOP 10 loan_id, principal, repaid, outstanding, due_date, is_delinquent

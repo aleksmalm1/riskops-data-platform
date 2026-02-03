@@ -1,3 +1,6 @@
+USE riskops;
+GO
+
 TRUNCATE TABLE raw.customers_raw;
 TRUNCATE TABLE raw.accounts_raw;
 TRUNCATE TABLE raw.transactions_raw;
