@@ -14,10 +14,21 @@ Small data-platform style project: load messy CSVs → clean/validate → model 
   - `99_demo_queries.sql` example queries
 - `scripts/run_all.sh` runs all scripts in order
 
-## Start (fresh clone)
+## Quick Start
 ```bash
-cp .env.example .env
-export $(cat .env | xargs)
-
-docker compose up -d
+git clone <repo-url> && cd riskops-data-platform
 bash scripts/run_all.sh
+```
+
+The script will:
+1. Create `.env` from `.env.example` (if missing)
+2. Start SQL Server in Docker
+3. Run the full ETL pipeline
+4. Display sample query results
+
+**Requirements:** Docker
+
+## Stop / Clean up
+```bash
+docker compose down -v
+```
